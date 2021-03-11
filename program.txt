@@ -1,0 +1,13 @@
+#include<stdio.h>
+ 
+int isKeyword(char buffer[]){
+	int i, flag = 0;
+	
+	for(i = 0; i < 32; ++i){
+			break;
+		}
+	}
+	
+	return flag;
+}
+
