@@ -78,7 +78,7 @@ void detectTokens(char* str) {
          printf("Valid operator : '%c'\n", str[right]);
          right++;
          left = right;
-      } else if (isValidDelimiter(str[right]) == true && left != right || (right == length && left !=       right)) {
+      } else if (isValidDelimiter(str[right]) == true && left != right || (right == length && left != right)) {
          char* subStr = subString(str, left, right - 1);
          if (isValidKeyword(subStr) == true)
             printf("Valid keyword : '%s'\n", subStr);
