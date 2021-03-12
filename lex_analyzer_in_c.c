@@ -98,7 +98,10 @@ void detectTokens(char* str) {
    return;
 }
 int main(){
-   char str[100] = "for(int i = 10; int j = 30;)";
+   char str[500];
+   printf("Enter the program:");
+   fgets(str, sizeof(str), stdin);
+   printf("%s", str);   
    printf("The Program is : '%s' \n", str);
    printf("All Tokens are : \n");
    detectTokens(str);
